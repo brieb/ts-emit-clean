@@ -1,0 +1,24 @@
+{
+  "name": "ts-emit-clean",
+  "version": "0.0.0",
+  "main": "./lib/index.js",
+  "bin": "./bin/ts-emit-clean",
+  "repository": "git@github.com:brieb/ts-emit-clean.git",
+  "author": "Brie <723547+brieb@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier \"**/*.ts\" --write",
+    "test": "tsc --noEmit && prettier \"**/*.ts\" --list-different",
+    "build": "rimraf lib && tsc",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "typescript": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.10",
+    "prettier": "^1.15.2",
+    "rimraf": "^2.6.2",
+    "typescript": "^3.1.6"
+  }
+}
