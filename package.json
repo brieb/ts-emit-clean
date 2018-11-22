@@ -1,6 +1,6 @@
 {
   "name": "ts-emit-clean",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "./lib/index.js",
   "bin": "./bin/ts-emit-clean",
   "repository": "git@github.com:brieb/ts-emit-clean.git",
